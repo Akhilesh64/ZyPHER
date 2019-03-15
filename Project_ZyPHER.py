@@ -34,8 +34,8 @@ def sendvid():
     camera.stop_recording()
 
     
-    fromaddr = '4thotdestroyers@gmail.com'
-    toaddr = 'themostelectrifyingboyvats@gmail.com,vedicmishra213@gmail.com,naveenbigopur@gmail.com,akhilesharma47@gmail.com'
+    fromaddr = '*************'
+    toaddr = '*************'
     alladdr = toaddr.split(',')
     msg = MIMEMultipart()
     msg['From'] = fromaddr
@@ -55,7 +55,7 @@ def sendvid():
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(fromaddr, 'iitjammu')
+    server.login(fromaddr, '<password of email address>')
     text = msg.as_string()
     server.sendmail(fromaddr, alladdr, text)
     server.quit()
@@ -113,5 +113,3 @@ try:
          time.sleep(300) 
 except KeyboardInterrupt:
     GPIO.cleanup()
-
-
