@@ -8,4 +8,4 @@ Components Used:
 4. A 5V 2.5A power supply for the Raspberry Pi
 5. A SD card loaded with Raspbian Stretch OS
 6. An external monitor or Laptop for accessing the CLI or GUI7. 
-HDMI cable
+7. HDMI cable
